@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea Completa: Lógica Matemática 1-31</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: 0 auto; padding: 20px; background-color: #f4f7f9; }
+        h1 { color: #0d47a1; text-align: center; border-bottom: 4px solid #0d47a1; padding-bottom: 10px; }
+        .guia { background: #fff; padding: 15px; border-left: 5px solid #0d47a1; margin-bottom: 25px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .ejercicio { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border: 1px solid #e0e0e0; }
+        .titulo-ej { font-weight: bold; color: #b71c1c; font-size: 1.1em; display: block; margin-bottom: 10px; }
+        .datos { margin-left: 10px; }
+        .simbolo-final { font-weight: bold; color: #1b5e20; background: #e8f5e9; padding: 5px 12px; border-radius: 4px; display: inline-block; margin-top: 10px; border: 1px solid #c8e6c9; font-size: 1.1em; }
+        b.var { color: #0d47a1; } 
+        b.op { color: #d81b60; font-weight: bold; } 
+        table { border-collapse: collapse; width: auto; margin-top: 15px; background: white; font-size: 0.9em; min-width: 250px; }
+        th { background-color: #0d47a1; color: white; padding: 8px; border: 1px solid #ddd; }
+        td { padding: 6px; border: 1px solid #ddd; text-align: center; font-weight: bold; }
+        .v { color: green; }
+        .f { color: red; }
+    </style>
+</head>
+<body>
+
+    <h1>Resolución de Proposiciones Lógicas (1 al 31)</h1>
+
+    <div class="guia">
+        <strong>Guía de Simbolización:</strong> Negación (~) | Conjunción (^) | Disyunción (v) | Condicional (->) | Bicondicional (<->)
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">1. Puedo manejar un auto si tiene dirección hidráulica.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> el auto tiene dirección hidráulica, <b class="op">entonces</b> puedo manejarlo.<br>
+            <b class="var">p</b>: El auto tiene dirección hidráulica | <b class="var">q</b>: Puedo manejarlo.<br>
+            Símbolo: <span class="simbolo-final">p -> q</span>
+            <table><tr><th>p</th><th>q</th><th>Resultado</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr><tr><td>F</td><td>V</td><td class="v">V</td></tr><tr><td>F</td><td>F</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">2. Gabriel García Márquez fue un gran escritor y bailarín.</span>
+        <div class="datos">
+            Reescrita: G.G.M fue escritor <b class="op">y</b> bailarín.<br>
+            <b class="var">p</b>: Fue escritor | <b class="var">q</b>: Fue bailarín.<br>
+            Símbolo: <span class="simbolo-final">p ^ q</span>
+            <table><tr><th>p</th><th>q</th><th>Resultado</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr><tr><td>F</td><td>V</td><td class="f">F</td></tr><tr><td>F</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">3. Las células son procariotas o eucariotas.</span>
+        <div class="datos">
+            Reescrita: Las células son procariotas <b class="op">o</b> eucariotas.<br>
+            <b class="var">p</b>: Células procariotas | <b class="var">q</b>: Células eucariotas.<br>
+            Símbolo: <span class="simbolo-final">p v q</span>
+            <table><tr><th>p</th><th>q</th><th>Resultado</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="v">V</td></tr><tr><td>F</td><td>V</td><td class="v">V</td></tr><tr><td>F</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">4. La raíz cuadrada de 25 es 5, o -5.</span>
+        <div class="datos">
+            Reescrita: La raíz es 5 <b class="op">o</b> la raíz es -5.<br>
+            <b class="var">p</b>: Raíz es 5 | <b class="var">q</b>: Raíz es -5.<br>
+            Símbolo: <span class="simbolo-final">p v q</span>
+            <table><tr><th>p</th><th>q</th><th>Resultado</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="v">V</td></tr><tr><td>F</td><td>V</td><td class="v">V</td></tr><tr><td>F</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">5. No todos los números primos son impares.</span>
+        <div class="datos">
+            Reescrita: <b class="op">No</b> es cierto que todos los primos son impares.<br>
+            <b class="var">p</b>: Todos los números primos son impares.<br>
+            Símbolo: <span class="simbolo-final">~p</span>
+            <table><tr><th>p</th><th>~p</th></tr><tr><td>V</td><td class="f">F</td></tr><tr><td>F</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">6. Mi cuñado es arquitecto e ingeniero.</span>
+        <div class="datos">
+            Reescrita: Es arquitecto <b class="op">y</b> es ingeniero.<br>
+            <b class="var">p</b>: Es arquitecto | <b class="var">q</b>: Es ingeniero.<br>
+            Símbolo: <span class="simbolo-final">p ^ q</span>
+            <table><tr><th>p</th><th>q</th><th>Resultado</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>F</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">7. Los aparatos tecnológicos son negros, blancos o grises.</span>
+        <div class="datos">
+            Reescrita: Son negros <b class="op">o</b> blancos <b class="op">o</b> grises.<br>
+            <b class="var">p</b>, <b class="var">q</b>, <b class="var">r</b> (variables de color).<br>
+            Símbolo: <span class="simbolo-final">p v q v r</span>
+            <table><tr><th>p</th><th>q</th><th>r</th><th>Res.</th></tr><tr><td>V</td><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>F</td><td>F</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">8. Si tengo hambre pues cocino.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> tengo hambre, <b class="op">entonces</b> cocino.<br>
+            <b class="var">p</b>: Tengo hambre | <b class="var">q</b>: Cocino.<br>
+            Símbolo: <span class="simbolo-final">p -> q</span>
+            <table><tr><th>p</th><th>q</th><th>Res.</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr><tr><td>F</td><td>V</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">9. Turquía se encuentra en Asia y Europa.</span>
+        <div class="datos">
+            Reescrita: Turquía está en Asia <b class="op">y</b> está en Europa.<br>
+            <b class="var">p</b>: Está en Asia | <b class="var">q</b>: Está en Europa.<br>
+            Símbolo: <span class="simbolo-final">p ^ q</span>
+            <table><tr><th>p</th><th>q</th><th>Res.</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">10. Si es un triángulo rectángulo, entonces la suma de cuadrados de catetos es igual al cuadrado de la hipotenusa.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> es triángulo rectángulo, <b class="op">entonces</b> cumple el teorema.<br>
+            <b class="var">p</b>: Es triángulo rectángulo | <b class="var">q</b>: Teorema de Pitágoras.<br>
+            Símbolo: <span class="simbolo-final">p -> q</span>
+            <table><tr><th>p</th><th>q</th><th>Resultado</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">11. Una ballena no es roja.</span>
+        <div class="datos">
+            Reescrita: <b class="op">No</b> es cierto que una ballena es roja.<br>
+            <b class="var">p</b>: Una ballena es roja.<br>
+            Símbolo: <span class="simbolo-final">~p</span>
+            <table><tr><th>p</th><th>~p</th></tr><tr><td>V</td><td class="f">F</td></tr><tr><td>F</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">12. El número 10 es par y el 5 es impar.</span>
+        <div class="datos">
+            Reescrita: 10 es par <b class="op">y</b> 5 es impar.<br>
+            <b class="var">p</b>: 10 es par | <b class="var">q</b>: 5 es impar.<br>
+            Símbolo: <span class="simbolo-final">p ^ q</span>
+            <table><tr><th>p</th><th>q</th><th>Resultado</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">13. Si estudio mucho, entonces pasaré el examen.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> estudio mucho, <b class="op">entonces</b> pasaré.<br>
+            <b class="var">p</b>: Estudio mucho | <b class="var">q</b>: Pasaré el examen.<br>
+            Símbolo: <span class="simbolo-final">p -> q</span>
+            <table><tr><th>p</th><th>q</th><th>Resultado</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">14. Iré al cine si y solo si termino mi tarea.</span>
+        <div class="datos">
+            Reescrita: Iré al cine <b class="op">si y solo si</b> termino tarea.<br>
+            <b class="var">p</b>: Iré al cine | <b class="var">q</b>: Termino tarea.<br>
+            Símbolo: <span class="simbolo-final">p <-> q</span>
+            <table><tr><th>p</th><th>q</th><th>Resultado</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr><tr><td>F</td><td>F</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">15. No es cierto que el sol sea un planeta.</span>
+        <div class="datos">
+            Reescrita: <b class="op">No</b> ocurre que el sol es planeta.<br>
+            <b class="var">p</b>: El sol es un planeta.<br>
+            Símbolo: <span class="simbolo-final">~p</span>
+            <table><tr><th>p</th><th>~p</th></tr><tr><td>V</td><td class="f">F</td></tr><tr><td>F</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">16. Juan es médico o es abogado.</span>
+        <div class="datos">
+            Reescrita: Juan es médico <b class="op">o</b> es abogado.<br>
+            <b class="var">p</b>: Es médico | <b class="var">q</b>: Es abogado.<br>
+            Símbolo: <span class="simbolo-final">p v q</span>
+            <table><tr><th>p</th><th>q</th><th>Resultado</th></tr><tr><td>V</td><td>F</td><td class="v">V</td></tr><tr><td>F</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">17. El 9 divide al 45 y el 3 al 9 y al 45.</span>
+        <div class="datos">
+            Reescrita: 9 divide 45 <b class="op">y</b> 3 divide 9 <b class="op">y</b> 3 divide 45.<br>
+            <b class="var">p</b>: 9|45 | <b class="var">q</b>: 3|9 | <b class="var">r</b>: 3|45.<br>
+            Símbolo: <span class="simbolo-final">p ^ q ^ r</span>
+            <table><tr><th>p</th><th>q</th><th>r</th><th>Res.</th></tr><tr><td>V</td><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td>V</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">18. Si llueve, entonces no saldré a correr.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> llueve, <b class="op">entonces no</b> saldré.<br>
+            <b class="var">p</b>: Llueve | <b class="var">q</b>: Saldré a correr.<br>
+            Símbolo: <span class="simbolo-final">p -> ~q</span>
+            <table><tr><th>p</th><th>q</th><th>~q</th><th>Res.</th></tr><tr><td>V</td><td>V</td><td>F</td><td class="f">F</td></tr><tr><td>V</td><td>F</td><td>V</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">19. La Tierra es redonda y gira alrededor del Sol.</span>
+        <div class="datos">
+            Reescrita: Tierra redonda <b class="op">y</b> gira alrededor del sol.<br>
+            <b class="var">p</b>: Tierra redonda | <b class="var">q</b>: Gira al sol.<br>
+            Símbolo: <span class="simbolo-final">p ^ q</span>
+            <table><tr><th>p</th><th>q</th><th>Resultado</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>F</td><td>V</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">20. Si x > 5 y y < 10, entonces z = 15.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> (x>5 <b class="op">y</b> y<10), <b class="op">entonces</b> z=15.<br>
+            <b class="var">p</b>: x>5 | <b class="var">q</b>: y<10 | <b class="var">r</b>: z=15.<br>
+            Símbolo: <span class="simbolo-final">(p ^ q) -> r</span>
+            <table><tr><th>(p^q)</th><th>r</th><th>Resultado</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr><tr><td>F</td><td>V</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">21. No iré a la fiesta a menos que me invites.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si no</b> me invitas, <b class="op">entonces no</b> iré.<br>
+            <b class="var">p</b>: Voy fiesta | <b class="var">q</b>: Me invitas.<br>
+            Símbolo: <span class="simbolo-final">~q -> ~p</span>
+            <table><tr><th>p</th><th>q</th><th>Res.</th></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr><tr><td>F</td><td>F</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">22. El perro ladra o el gato maúlla.</span>
+        <div class="datos">
+            Reescrita: Perro ladra <b class="op">o</b> gato maúlla.<br>
+            <b class="var">p</b>: Perro ladra | <b class="var">q</b>: Gato maúlla.<br>
+            Símbolo: <span class="simbolo-final">p v q</span>
+            <table><tr><th>p</th><th>q</th><th>Resultado</th></tr><tr><td>V</td><td>F</td><td class="v">V</td></tr><tr><td>F</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">23. Si el parque está abierto, entonces juego basketball y fútbol.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> parque abierto, <b class="op">entonces</b> (juego basket <b class="op">y</b> fútbol).<br>
+            <b class="var">p</b>: Parque abierto | <b class="var">q</b>: Basket | <b class="var">r</b>: Fútbol.<br>
+            Símbolo: <span class="simbolo-final">p -> (q ^ r)</span>
+            <table><tr><th>p</th><th>(q^r)</th><th>Resultado</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr><tr><td>F</td><td>F</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">24. Si no comes, te enfermarás.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si no</b> comes, <b class="op">entonces</b> te enfermas.<br>
+            <b class="var">p</b>: Comes | <b class="var">q</b>: Te enfermas.<br>
+            Símbolo: <span class="simbolo-final">~p -> q</span>
+            <table><tr><th>p</th><th>~p</th><th>q</th><th>Res.</th></tr><tr><td>V</td><td>F</td><td>F</td><td class="v">V</td></tr><tr><td>F</td><td>V</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">25. 2 + 2 = 4 y 3 + 3 = 6.</span>
+        <div class="datos">
+            Reescrita: p <b class="op">y</b> q.<br>
+            <b class="var">p</b>: 2+2=4 | <b class="var">q</b>: 3+3=6.<br>
+            Símbolo: <span class="simbolo-final">p ^ q</span>
+            <table><tr><th>p</th><th>q</th><th>Res.</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">26. Si un número es divisible por 4, es par.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> es div por 4, <b class="op">entonces</b> es par.<br>
+            <b class="var">p</b>: Divisible por 4 | <b class="var">q</b>: Es par.<br>
+            Símbolo: <span class="simbolo-final">p -> q</span>
+            <table><tr><th>p</th><th>q</th><th>Res.</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">27. El cielo está despejado si y solo si no hay nubes.</span>
+        <div class="datos">
+            Reescrita: Cielo despejado <b class="op">si y solo si no</b> hay nubes.<br>
+            <b class="var">p</b>: Cielo despejado | <b class="var">q</b>: Hay nubes.<br>
+            Símbolo: <span class="simbolo-final">p <-> ~q</span>
+            <table><tr><th>p</th><th>q</th><th>~q</th><th>Res.</th></tr><tr><td>V</td><td>V</td><td>F</td><td class="f">F</td></tr><tr><td>V</td><td>F</td><td>V</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">28. Si juego softball y no corro rápido, entonces perderemos.</span>
+        <div class="datos">
+            Reescrita: <b class="op">Si</b> (juego softball <b class="op">y no</b> corro), <b class="op">entonces</b> perderemos.<br>
+            <b class="var">p</b>: Juego | <b class="var">q</b>: Corro | <b class="var">r</b>: Perdemos.<br>
+            Símbolo: <span class="simbolo-final">(p ^ ~q) -> r</span>
+            <table><tr><th>p</th><th>~q</th><th>r</th><th>Res.</th></tr><tr><td>V</td><td>V</td><td>F</td><td class="f">F</td></tr><tr><td>V</td><td>V</td><td>V</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">29. O bien es de día o bien es de noche.</span>
+        <div class="datos">
+            Reescrita: Es de día <b class="op">o exclusivo</b> es de noche.<br>
+            <b class="var">p</b>: Es de día | <b class="var">q</b>: Es de noche.<br>
+            Símbolo: <span class="simbolo-final">p v q (xor)</span>
+            <table><tr><th>p</th><th>q</th><th>Res.</th></tr><tr><td>V</td><td>V</td><td class="f">F</td></tr><tr><td>V</td><td>F</td><td class="v">V</td></tr><tr><td>F</td><td>V</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">30. No es el caso que 5 sea mayor que 10.</span>
+        <div class="datos">
+            Reescrita: <b class="op">No</b> ocurre que 5 > 10.<br>
+            <b class="var">p</b>: 5 es mayor que 10.<br>
+            Símbolo: <span class="simbolo-final">~p</span>
+            <table><tr><th>p</th><th>~p</th></tr><tr><td>V</td><td class="f">F</td></tr><tr><td>F</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+    <div class="ejercicio">
+        <span class="titulo-ej">31. Apruebo el examen si y solo si ingreso a la universidad.</span>
+        <div class="datos">
+            Reescrita: Apruebo <b class="op">si y solo si</b> ingreso.<br>
+            <b class="var">p</b>: Apruebo | <b class="var">q</b>: Ingreso.<br>
+            Símbolo: <span class="simbolo-final">p <-> q</span>
+            <table><tr><th>p</th><th>q</th><th>Res.</th></tr><tr><td>V</td><td>V</td><td class="v">V</td></tr><tr><td>V</td><td>F</td><td class="f">F</td></tr><tr><td>F</td><td>F</td><td class="v">V</td></tr></table>
+        </div>
+    </div>
+
+</body>
+</html>
